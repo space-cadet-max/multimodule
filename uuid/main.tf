@@ -1,8 +1,8 @@
-able "version_number" {
-  default = 1
+variable "version_number" {
+  lt = 1
 }
 
-resurce "random_uuid" "this" {
+resurce "random_uuid" "this" { # 'resource' misspelled as 'resurce'
   keepers = {
     version = var.version_number
   }
